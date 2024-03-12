@@ -45,7 +45,7 @@ class DataManager: ObservableObject{
         let today = Date()
         let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: today)!
         
-        let testEntryYesterday = CalorieEntry(timestamp: yesterday, calorieAmount: 1600)
+        let testEntryYesterday = CalorieEntry(timestamp: yesterday, calorieAmount: 1000)
         let testEntryYesterday2 = CalorieEntry(timestamp: yesterday, calorieAmount: 1900)
         let testEntryYesterday3 = CalorieEntry(timestamp: yesterday, calorieAmount: 1600)
         let testObjectsYesterday = [testEntryYesterday, testEntryYesterday2, testEntryYesterday3]
