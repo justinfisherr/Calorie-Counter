@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import FirebaseCore
+import FirebaseAuth
+
+class FirebaseInit {
+    
+    init(){
+        FirebaseApp.configure()
+    }
+}
+

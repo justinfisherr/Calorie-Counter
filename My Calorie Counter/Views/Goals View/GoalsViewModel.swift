@@ -26,31 +26,31 @@ final class GoalsViewModel :ObservableObject{
     
     func updateSaveButtonState() {
         let fieldsFilled = currentWeightLbs != "" && heightCm != "" && age != "" && activityLevel != "Default"
-        let valuesChanged = currentWeightLbs != UserDefaults.standard.string(forKey: "currentWeightLbs") ||
-        heightCm != UserDefaults.standard.string(forKey: "heightCm") ||
-        age != UserDefaults.standard.string(forKey: "age") ||
-        activityLevel != UserDefaults.standard.string(forKey: "activityLevel")
+        let valuesChanged = currentWeightLbs != UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "currentWeightLbs") ||
+        heightCm != UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "heightCm") ||
+        age != UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "age") ||
+        activityLevel != UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "activityLevel")
         
         isSaveEnabled = fieldsFilled && (valuesChanged)
         calculateTDEE() // Calculate TDEE whenever input fields change
     }
     
     func saveGoals() {
-        UserDefaults.standard.set(currentWeightLbs, forKey: "currentWeightLbs")
-        UserDefaults.standard.set(heightCm, forKey: "heightCm")
-        UserDefaults.standard.set(age, forKey: "age")
-        UserDefaults.standard.set(activityLevel, forKey: "activityLevel")
+        UserDefaults(suiteName:"group.com.calories.counter")?.set(currentWeightLbs, forKey: "currentWeightLbs")
+        UserDefaults(suiteName:"group.com.calories.counter")?.set(heightCm, forKey: "heightCm")
+        UserDefaults(suiteName:"group.com.calories.counter")?.set(age, forKey: "age")
+        UserDefaults(suiteName:"group.com.calories.counter")?.set(activityLevel, forKey: "activityLevel")
         dataManager.changeTdee(inputTdee: tdee)
         isSaveEnabled  = false
         
     }
     
     func loadUserData() {
-        currentWeightLbs = UserDefaults.standard.string(forKey: "currentWeightLbs") ?? ""
-        heightCm = UserDefaults.standard.string(forKey: "heightCm") ?? ""
-        age = UserDefaults.standard.string(forKey: "age") ?? ""
-        activityLevel = UserDefaults.standard.string(forKey: "activityLevel") ?? ""
-        tdee = UserDefaults.standard.double(forKey: "tdee")
+        currentWeightLbs = UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "currentWeightLbs") ?? ""
+        heightCm = UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "heightCm") ?? ""
+        age = UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "age") ?? ""
+        activityLevel = UserDefaults(suiteName:"group.com.calories.counter")?.string(forKey: "activityLevel") ?? ""
+        tdee = UserDefaults(suiteName:"group.com.calories.counter")?.double(forKey: "tdee") ?? 0.0
         
     }
     

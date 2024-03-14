@@ -20,6 +20,23 @@
 		BBCA1A942B9FD73700FE7690 /* CalorieEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA1A932B9FD73700FE7690 /* CalorieEntry.swift */; };
 		BBF14F162BA0A3420051B2DE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF14F152BA0A3420051B2DE /* HomeViewModel.swift */; };
 		BBF14F182BA0BA5E0051B2DE /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF14F172BA0BA5E0051B2DE /* GoalsViewModel.swift */; };
+		BBF14F222BA112450051B2DE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BBF14F212BA112450051B2DE /* FirebaseAuth */; };
+		BBF14F242BA112450051B2DE /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BBF14F232BA112450051B2DE /* FirebaseAuthCombine-Community */; };
+		BBF14F262BA112450051B2DE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BBF14F252BA112450051B2DE /* FirebaseDatabase */; };
+		BBF14F282BA112450051B2DE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BBF14F272BA112450051B2DE /* FirebaseDatabaseSwift */; };
+		BBF14F2A2BA112450051B2DE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BBF14F292BA112450051B2DE /* FirebaseFirestore */; };
+		BBF14F2C2BA112450051B2DE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BBF14F2B2BA112450051B2DE /* FirebaseFirestoreSwift */; };
+		BBF14F2E2BA115860051B2DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBF14F2D2BA115860051B2DE /* GoogleService-Info.plist */; };
+		BBF14F302BA115E50051B2DE /* FirebaseInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF14F2F2BA115E50051B2DE /* FirebaseInit.swift */; };
+		BBF14F382BA141210051B2DE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF14F372BA141210051B2DE /* WidgetKit.framework */; };
+		BBF14F3A2BA141210051B2DE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF14F392BA141210051B2DE /* SwiftUI.framework */; };
+		BBF14F3D2BA141210051B2DE /* Calorie_Counter_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF14F3C2BA141210051B2DE /* Calorie_Counter_WidgetBundle.swift */; };
+		BBF14F3F2BA141210051B2DE /* Calorie_Counter_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF14F3E2BA141210051B2DE /* Calorie_Counter_Widget.swift */; };
+		BBF14F412BA141230051B2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF14F402BA141230051B2DE /* Assets.xcassets */; };
+		BBF14F452BA141230051B2DE /* Calorie-Counter-WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BBF14F352BA141210051B2DE /* Calorie-Counter-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBF14F4E2BA18D5B0051B2DE /* CalorieIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF14F4D2BA18D5B0051B2DE /* CalorieIntent.swift */; };
+		BBF14F4F2BA1956B0051B2DE /* CalorieIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF14F4D2BA18D5B0051B2DE /* CalorieIntent.swift */; };
+		BBF14F502BA195CB0051B2DE /* CalorieEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA1A932B9FD73700FE7690 /* CalorieEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +54,28 @@
 			remoteGlobalIDString = BBCA1A552B9E436E00FE7690;
 			remoteInfo = "My Calorie Counter";
 		};
+		BBF14F432BA141230051B2DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBCA1A4E2B9E436E00FE7690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF14F342BA141210051B2DE;
+			remoteInfo = "Calorie-Counter-WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BBF14F462BA141230051B2DE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BBF14F452BA141230051B2DE /* Calorie-Counter-WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BBCA1A562B9E436E00FE7690 /* My Calorie Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Calorie Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +94,18 @@
 		BBCA1A932B9FD73700FE7690 /* CalorieEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieEntry.swift; sourceTree = "<group>"; };
 		BBF14F152BA0A3420051B2DE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BBF14F172BA0BA5E0051B2DE /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
+		BBF14F2D2BA115860051B2DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BBF14F2F2BA115E50051B2DE /* FirebaseInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInit.swift; sourceTree = "<group>"; };
+		BBF14F352BA141210051B2DE /* Calorie-Counter-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Calorie-Counter-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF14F372BA141210051B2DE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BBF14F392BA141210051B2DE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BBF14F3C2BA141210051B2DE /* Calorie_Counter_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_Counter_WidgetBundle.swift; sourceTree = "<group>"; };
+		BBF14F3E2BA141210051B2DE /* Calorie_Counter_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_Counter_Widget.swift; sourceTree = "<group>"; };
+		BBF14F402BA141230051B2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBF14F422BA141230051B2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF14F4A2BA146600051B2DE /* My Calorie Counter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "My Calorie Counter.entitlements"; sourceTree = "<group>"; };
+		BBF14F4B2BA146BE0051B2DE /* Calorie-Counter-WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Calorie-Counter-WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		BBF14F4D2BA18D5B0051B2DE /* CalorieIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF14F282BA112450051B2DE /* FirebaseDatabaseSwift in Frameworks */,
+				BBF14F262BA112450051B2DE /* FirebaseDatabase in Frameworks */,
+				BBF14F222BA112450051B2DE /* FirebaseAuth in Frameworks */,
+				BBF14F2A2BA112450051B2DE /* FirebaseFirestore in Frameworks */,
+				BBF14F242BA112450051B2DE /* FirebaseAuthCombine-Community in Frameworks */,
+				BBF14F2C2BA112450051B2DE /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,15 +136,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBF14F322BA141210051B2DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF14F3A2BA141210051B2DE /* SwiftUI.framework in Frameworks */,
+				BBF14F382BA141210051B2DE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BBCA1A4D2B9E436E00FE7690 = {
 			isa = PBXGroup;
 			children = (
+				BBF14F4D2BA18D5B0051B2DE /* CalorieIntent.swift */,
+				BBF14F4B2BA146BE0051B2DE /* Calorie-Counter-WidgetExtension.entitlements */,
 				BBCA1A582B9E436E00FE7690 /* My Calorie Counter */,
 				BBCA1A692B9E437000FE7690 /* My Calorie CounterTests */,
 				BBCA1A732B9E437000FE7690 /* My Calorie CounterUITests */,
+				BBF14F3B2BA141210051B2DE /* Calorie-Counter-Widget */,
+				BBF14F362BA141210051B2DE /* Frameworks */,
 				BBCA1A572B9E436E00FE7690 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +168,7 @@
 				BBCA1A562B9E436E00FE7690 /* My Calorie Counter.app */,
 				BBCA1A662B9E437000FE7690 /* My Calorie CounterTests.xctest */,
 				BBCA1A702B9E437000FE7690 /* My Calorie CounterUITests.xctest */,
+				BBF14F352BA141210051B2DE /* Calorie-Counter-WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +176,8 @@
 		BBCA1A582B9E436E00FE7690 /* My Calorie Counter */ = {
 			isa = PBXGroup;
 			children = (
+				BBF14F4A2BA146600051B2DE /* My Calorie Counter.entitlements */,
+				BBF14F2D2BA115860051B2DE /* GoogleService-Info.plist */,
 				BBF14F1D2BA0C9D30051B2DE /* Model */,
 				BBF14F1C2BA0C9B70051B2DE /* DataTypes */,
 				BBF14F1B2BA0C9500051B2DE /* Views */,
@@ -147,6 +219,7 @@
 				BBF14F1F2BA0C9FA0051B2DE /* Home View */,
 				BBF14F1E2BA0C9E60051B2DE /* Goals View */,
 				BBCA1A5B2B9E436E00FE7690 /* ContentView.swift */,
+				BBF14F2F2BA115E50051B2DE /* FirebaseInit.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +258,26 @@
 			path = "Home View";
 			sourceTree = "<group>";
 		};
+		BBF14F362BA141210051B2DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBF14F372BA141210051B2DE /* WidgetKit.framework */,
+				BBF14F392BA141210051B2DE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBF14F3B2BA141210051B2DE /* Calorie-Counter-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				BBF14F3C2BA141210051B2DE /* Calorie_Counter_WidgetBundle.swift */,
+				BBF14F3E2BA141210051B2DE /* Calorie_Counter_Widget.swift */,
+				BBF14F402BA141230051B2DE /* Assets.xcassets */,
+				BBF14F422BA141230051B2DE /* Info.plist */,
+			);
+			path = "Calorie-Counter-Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,12 +288,22 @@
 				BBCA1A522B9E436E00FE7690 /* Sources */,
 				BBCA1A532B9E436E00FE7690 /* Frameworks */,
 				BBCA1A542B9E436E00FE7690 /* Resources */,
+				BBF14F462BA141230051B2DE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BBF14F442BA141230051B2DE /* PBXTargetDependency */,
 			);
 			name = "My Calorie Counter";
+			packageProductDependencies = (
+				BBF14F212BA112450051B2DE /* FirebaseAuth */,
+				BBF14F232BA112450051B2DE /* FirebaseAuthCombine-Community */,
+				BBF14F252BA112450051B2DE /* FirebaseDatabase */,
+				BBF14F272BA112450051B2DE /* FirebaseDatabaseSwift */,
+				BBF14F292BA112450051B2DE /* FirebaseFirestore */,
+				BBF14F2B2BA112450051B2DE /* FirebaseFirestoreSwift */,
+			);
 			productName = "My Calorie Counter";
 			productReference = BBCA1A562B9E436E00FE7690 /* My Calorie Counter.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +344,23 @@
 			productReference = BBCA1A702B9E437000FE7690 /* My Calorie CounterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BBF14F342BA141210051B2DE /* Calorie-Counter-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF14F492BA141230051B2DE /* Build configuration list for PBXNativeTarget "Calorie-Counter-WidgetExtension" */;
+			buildPhases = (
+				BBF14F312BA141210051B2DE /* Sources */,
+				BBF14F322BA141210051B2DE /* Frameworks */,
+				BBF14F332BA141210051B2DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calorie-Counter-WidgetExtension";
+			productName = "Calorie-Counter-WidgetExtension";
+			productReference = BBF14F352BA141210051B2DE /* Calorie-Counter-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,6 +382,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = BBCA1A552B9E436E00FE7690;
 					};
+					BBF14F342BA141210051B2DE = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = BBCA1A512B9E436E00FE7690 /* Build configuration list for PBXProject "My Calorie Counter" */;
@@ -273,6 +396,9 @@
 				Base,
 			);
 			mainGroup = BBCA1A4D2B9E436E00FE7690;
+			packageReferences = (
+				BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BBCA1A572B9E436E00FE7690 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +406,7 @@
 				BBCA1A552B9E436E00FE7690 /* My Calorie Counter */,
 				BBCA1A652B9E437000FE7690 /* My Calorie CounterTests */,
 				BBCA1A6F2B9E437000FE7690 /* My Calorie CounterUITests */,
+				BBF14F342BA141210051B2DE /* Calorie-Counter-WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -291,6 +418,7 @@
 			files = (
 				BBCA1A612B9E437000FE7690 /* Preview Assets.xcassets in Resources */,
 				BBCA1A5E2B9E437000FE7690 /* Assets.xcassets in Resources */,
+				BBF14F2E2BA115860051B2DE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +436,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBF14F332BA141210051B2DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF14F412BA141230051B2DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -317,8 +453,10 @@
 			files = (
 				BBCA1A882B9E842E00FE7690 /* Goals.swift in Sources */,
 				BBF14F182BA0BA5E0051B2DE /* GoalsViewModel.swift in Sources */,
+				BBF14F302BA115E50051B2DE /* FirebaseInit.swift in Sources */,
 				BBCA1A8C2B9F866100FE7690 /* DataManager.swift in Sources */,
 				BBF14F162BA0A3420051B2DE /* HomeViewModel.swift in Sources */,
+				BBF14F4F2BA1956B0051B2DE /* CalorieIntent.swift in Sources */,
 				BBCA1A842B9E44D400FE7690 /* HomeView.swift in Sources */,
 				BBCA1A5C2B9E436E00FE7690 /* ContentView.swift in Sources */,
 				BBCA1A942B9FD73700FE7690 /* CalorieEntry.swift in Sources */,
@@ -343,6 +481,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBF14F312BA141210051B2DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF14F3F2BA141210051B2DE /* Calorie_Counter_Widget.swift in Sources */,
+				BBF14F3D2BA141210051B2DE /* Calorie_Counter_WidgetBundle.swift in Sources */,
+				BBF14F502BA195CB0051B2DE /* CalorieEntry.swift in Sources */,
+				BBF14F4E2BA18D5B0051B2DE /* CalorieIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -355,6 +504,11 @@
 			isa = PBXTargetDependency;
 			target = BBCA1A552B9E436E00FE7690 /* My Calorie Counter */;
 			targetProxy = BBCA1A712B9E437000FE7690 /* PBXContainerItemProxy */;
+		};
+		BBF14F442BA141230051B2DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBF14F342BA141210051B2DE /* Calorie-Counter-WidgetExtension */;
+			targetProxy = BBF14F432BA141230051B2DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -481,8 +635,10 @@
 		BBCA1A7B2B9E437100FE7690 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "My Calorie Counter/My Calorie Counter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"My Calorie Counter/Preview Content\"";
@@ -510,8 +666,10 @@
 		BBCA1A7C2B9E437100FE7690 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "My Calorie Counter/My Calorie Counter.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"My Calorie Counter/Preview Content\"";
@@ -612,6 +770,66 @@
 			};
 			name = Release;
 		};
+		BBF14F472BA141230051B2DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Calorie-Counter-WidgetExtension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLSXY36MFR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Calorie-Counter-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Calorie-Counter-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.My-Calorie-Counter.Calorie-Counter-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBF14F482BA141230051B2DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Calorie-Counter-WidgetExtension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLSXY36MFR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Calorie-Counter-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Calorie-Counter-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.My-Calorie-Counter.Calorie-Counter-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -651,7 +869,60 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BBF14F492BA141230051B2DE /* Build configuration list for PBXNativeTarget "Calorie-Counter-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF14F472BA141230051B2DE /* Debug */,
+				BBF14F482BA141230051B2DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBF14F212BA112450051B2DE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BBF14F232BA112450051B2DE /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		BBF14F252BA112450051B2DE /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BBF14F272BA112450051B2DE /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		BBF14F292BA112450051B2DE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BBF14F2B2BA112450051B2DE /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF14F202BA112450051B2DE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBCA1A4E2B9E436E00FE7690 /* Project object */;
 }

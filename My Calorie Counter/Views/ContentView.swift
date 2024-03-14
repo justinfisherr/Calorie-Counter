@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    private var firebaseInit = FirebaseInit()
     @StateObject private var dataManager = DataManager()
     var body: some View {
         HomeView(dataManager:dataManager)
